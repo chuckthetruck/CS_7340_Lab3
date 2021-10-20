@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/saxon-xqj-10.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/saxon9-test.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/saxon9he.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jline-2.14.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/saxon9-xqj.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/saxon-he-test-10.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/saxon-he-10.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
