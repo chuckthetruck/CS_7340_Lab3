@@ -1,0 +1,94 @@
+@(message: List[List[String]])
+<!DOCTYPE html>
+<html>
+
+    <style>
+            .button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+
+            .data {
+                border: .5px solid black;
+                border-collapse: collapse;
+                max-width: 1000px;
+                max-height: 50px;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            .datarow {
+                max-width: 50px;
+                max-height: 50px;
+            }
+            table {
+                width:50%
+            }
+    </style>
+
+    <body>
+
+        <header class="topbar">
+            <h1 class="focused" style="font-size: 37px;
+                color: #57a957">
+                Topic 7
+            </h1>
+
+        </header>
+
+        <div>
+            @*            <p class="focused" style="font-size: 20px;*@
+            @*                color: #3F51B5">*@
+            @*                @message*@
+            @*            </p>*@
+
+        <table>
+            <tr class = "datarow">
+                <th>Title</th>
+                <th>Book Title</th>
+                <th>Pages</th>
+                <th>Year</th>
+                <th>Url</th>
+                <th>EE</th>
+                <th>Publisher</th>
+                <th>Journal</th>
+                <th>Vol</th>
+                <th>Number</th>
+                <th>Crossref</th>
+                <th>Isbn</th>
+                <th>Abstract (Limited Chars)</th>
+            </tr>
+
+
+            @for(title <- message) {
+                <tr class="datarow">
+                    @for(element <- title) {
+                        <td class="data">@element</td>
+                    }
+                    @* <td>example text</td>*@
+                </tr>
+            }
+
+            </table>
+
+
+
+        </div>
+
+        @*        <form action = "@routes.HomeController.topic7Handler()" method="GET">*@
+        @*            <button id="api-get-page"  class="button" type="submit">Display Metadata</button>*@
+        @*        </form>*@
+
+        <form action = "@routes.HomeController.topicsHandler()" method="GET">
+            <button id="api-get-page"  class="button" type="submit">Back to Topics</button>
+        </form>
+    </body>
+</html>

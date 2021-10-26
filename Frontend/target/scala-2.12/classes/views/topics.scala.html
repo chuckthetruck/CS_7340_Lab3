@@ -1,0 +1,74 @@
+@(message: String)
+<!DOCTYPE html>
+<html>
+
+    <style>
+            .button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+    </style>
+
+    <body>
+
+        <header class="topbar">
+            <h1 class="focused" style="font-size: 37px;
+                color: #57a957">
+                Topics
+            </h1>
+
+        </header>
+
+        <div>
+            <p class="focused" style="font-size: 20px;
+                color: #3F51B5">
+                @message
+            </p>
+
+        </div>
+
+        <form action = "@routes.HomeController.topic0Handler()" method="GET">
+            <button  id="api-get-page"  class="button">Topic 0</button>
+        </form>
+        <form action = "@routes.HomeController.topic1Handler()" method="GET">
+            <button  id="api-get-page"  class="button">Topic 1</button>
+        </form>
+        <form action = "@routes.HomeController.topic2Handler()" method="GET">
+            <button  id="api-get-page"  class="button">Topic 2</button>
+        </form>
+        <form action = "@routes.HomeController.topic3Handler()" method="GET">
+            <button  id="api-get-page"  class="button">Topic 3</button>
+        </form>
+        <form action = "@routes.HomeController.topic4Handler()" method="GET">
+            <button  id="api-get-page"  class="button">Topic 4</button>
+        </form>
+        <form action = "@routes.HomeController.topic5Handler()" method="GET">
+            <button  id="api-get-page"  class="button">Topic 5</button>
+        </form>
+        <form action = "@routes.HomeController.topic6Handler()" method="GET">
+            <button  id="api-get-page"  class="button">Topic 6</button>
+        </form>
+        <form action = "@routes.HomeController.topic7Handler()" method="GET">
+            <button  id="api-get-page"  class="button">Topic 7</button>
+        </form>
+        <form action = "@routes.HomeController.topic8Handler()" method="GET">
+            <button  id="api-get-page"  class="button">Topic 8</button>
+        </form>
+        <form action = "@routes.HomeController.topic9Handler()" method="GET">
+            <button  id="api-get-page"  class="button">Topic 9</button>
+        </form>
+
+
+        <form action = "@routes.HomeController.ldaHandler()" method="GET">
+            <button id="api-get-page"  class="button" type="submit">Back to LDA</button>
+        </form>
+    </body>
+</html>

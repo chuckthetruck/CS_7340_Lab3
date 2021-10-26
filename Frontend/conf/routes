@@ -1,0 +1,35 @@
+
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index()
+GET     /lda                        controllers.HomeController.lda()
+GET     /ldaHandler                 controllers.HomeController.ldaHandler()
+GET     /topics                     controllers.HomeController.topics()
+GET     /topicsHandler              controllers.HomeController.topicsHandler()
+GET     /topic0                     controllers.HomeController.topic0()
+GET     /topic0Handler              controllers.HomeController.topic0Handler()
+GET     /topic1                     controllers.HomeController.topic1()
+GET     /topic1Handler              controllers.HomeController.topic1Handler()
+GET     /topic2                     controllers.HomeController.topic2()
+GET     /topic2Handler              controllers.HomeController.topic2Handler()
+GET     /topic3                     controllers.HomeController.topic3()
+GET     /topic3Handler              controllers.HomeController.topic3Handler()
+GET     /topic4                     controllers.HomeController.topic4()
+GET     /topic4Handler              controllers.HomeController.topic4Handler()
+GET     /topic5                     controllers.HomeController.topic5()
+GET     /topic5Handler              controllers.HomeController.topic5Handler()
+GET     /topic6                     controllers.HomeController.topic6()
+GET     /topic6Handler              controllers.HomeController.topic6Handler()
+GET     /topic7                     controllers.HomeController.topic7()
+GET     /topic7Handler              controllers.HomeController.topic7Handler()
+GET     /topic8                     controllers.HomeController.topic8()
+GET     /topic8Handler              controllers.HomeController.topic8Handler()
+GET     /topic9                     controllers.HomeController.topic9()
+GET     /topic9Handler              controllers.HomeController.topic9Handler()
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
